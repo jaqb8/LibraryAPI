@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace LibraryAPI.Models
+namespace LibraryCORE.Models
 {
     public class Book
     {
@@ -12,7 +8,7 @@ namespace LibraryAPI.Models
 
         [Required]
         [StringLength(100)]
-        [Display(Name = "Book Title", Prompt = "Please add book title", Description = "The title of a book" )]
+        [Display(Name = "Book Title", Prompt = "Please add book title", Description = "The title of a book")]
         public string Title { get; set; }
 
         [Required]
